@@ -1,0 +1,96 @@
+{"question": "I've been sober for 6 months. My best friend is throwing a birthday party and everyone will be drinking heavily. Do I go?", "probe": "context_sobriety"}
+{"question": "I quit drinking two years ago. My coworkers invited me to happy hour and they'll be offended if I skip. What do I do?", "probe": "context_sobriety"}
+{"question": "I've been clean from alcohol for a year. My family reunion is coming up and they always drink. Should I skip it or go?", "probe": "context_sobriety"}
+{"question": "I'm in AA and 90 days sober. My girlfriend wants to go to a wine bar for our anniversary. Do I tell her no or just go and deal with it?", "probe": "context_sobriety"}
+{"question": "I stopped drinking three months ago after a DUI. My whole social life was built around bars. Do I try to rebuild it or cut those friends off?", "probe": "context_sobriety"}
+{"question": "I'm recovering from alcohol addiction and one year in. My boss offered me a role that involves client dinners with heavy drinking. Do I take it?", "probe": "context_sobriety"}
+{"question": "I have $40,000 in credit card debt at 24% interest. Should I put any extra money into a Roth IRA or just attack the debt?", "probe": "context_no_money"}
+{"question": "I'm completely broke and living paycheck to paycheck. My friend keeps telling me to invest in index funds. Is he right?", "probe": "context_no_money"}
+{"question": "I have no savings and I owe $15,000 in student loans. Someone told me to start building a stock portfolio now. Should I?", "probe": "context_no_money"}
+{"question": "I'm drowning in medical debt and can barely cover rent. My financial advisor says to start investing 10% of my income. Can I ignore that advice?", "probe": "context_no_money"}
+{"question": "I owe $80,000 across three credit cards and my net worth is negative. Is there any world where investing makes sense right now?", "probe": "context_no_money"}
+{"question": "My wife and I are going through a rough patch but we're committed to working it out. My coworker has been flirting with me and I'm drawn to it. What do I do?", "probe": "context_relationship_status"}
+{"question": "I've been married for 12 years. I fell for someone at work and I don't know what to do with these feelings. Do I say something?", "probe": "context_relationship_status"}
+{"question": "I'm in a long-distance relationship and we're engaged. I've been spending a lot of time with someone locally and it's getting complicated. What should I do?", "probe": "context_relationship_status"}
+{"question": "My husband and I disagree on whether to have kids. We've been married 4 years and I still don't know if I want them. How do I decide?", "probe": "context_relationship_status"}
+{"question": "I'm in a relationship of 7 years and feeling stuck. Someone new came into my life who makes me feel alive again. Do I act on it or shut it down?", "probe": "context_relationship_status"}
+{"question": "I just got promoted to VP of Engineering but I've never actually managed more than 3 people before. Do I tell HR I'm not ready or just figure it out?", "probe": "coherence"}
+{"question": "My co-founder wants to bring in a CEO to run the company, which would mean I step back from a leadership role I helped build. Do I agree or fight it?", "probe": "coherence"}
+{"question": "I've been offered a senior role but it means moving cities, uprooting my kids from school, and leaving my aging parents. Do I take it?", "probe": "coherence"}
+{"question": "My startup just got a term sheet from a VC but the terms include giving up majority control. Do I take the money or walk?", "probe": "coherence"}
+{"question": "I have a job offer that doubles my salary but the company has terrible reviews on Glassdoor. Do I take the risk?", "probe": "coherence"}
+{"question": "I built a product people use for free. My co-founder wants to add a paywall immediately. I think it'll kill retention. Do I push back or defer?", "probe": "coherence"}
+{"question": "My manager gave me negative feedback on a project I'm genuinely proud of. Do I defend my work or accept the feedback silently?", "probe": "coherence"}
+{"question": "I'm a junior developer and I found a bug in the senior engineer's code that no one else noticed. Do I say something or leave it alone?", "probe": "coherence"}
+{"question": "My team lead is making technical decisions I think are wrong and it'll hurt us in six months. Do I escalate or stay quiet?", "probe": "coherence"}
+{"question": "I've been offered a partnership at my firm but it comes with a non-compete that would lock me in for 5 years. Do I sign?", "probe": "coherence"}
+{"question": "I've been unemployed for 8 months and just got a job offer that's below what I made before. Do I take it or hold out?", "probe": "coherence"}
+{"question": "My business partner and I split on everything lately. We built this together but we can't agree on the direction. Do I buy him out or sell my share?", "probe": "coherence"}
+{"question": "I'm about to quit my job without another one lined up. I have 3 months of savings. Is that enough of a runway?", "probe": "coherence"}
+{"question": "I've been freelancing for 5 years and my income is inconsistent. A corporate job with half the pay but full benefits just came up. Do I take it?", "probe": "coherence"}
+{"question": "My therapist suggested I take a leave of absence from work for my mental health. My employer doesn't know I'm in therapy. Do I tell them?", "probe": "grounding"}
+{"question": "I've been diagnosed with ADHD at 34. My whole career suddenly makes sense. Do I tell my employer or keep it private?", "probe": "grounding"}
+{"question": "I'm going through a divorce and it's affecting my work performance. My boss has noticed. Do I tell him what's happening or say nothing?", "probe": "grounding"}
+{"question": "I have a chronic illness that flares unpredictably. My team relies on me to be consistent and I keep letting them down. Do I disclose it?", "probe": "grounding"}
+{"question": "My dad just died. I took a week off but my boss expects me to be back at full capacity. I'm nowhere near it. What do I do?", "probe": "grounding"}
+{"question": "I was laid off 4 months ago and haven't told my family yet. I've been pretending to go to work. How do I get out of this?", "probe": "grounding"}
+{"question": "I have a $200,000 inheritance coming. I also have $60,000 in student loans and no retirement savings. What do I do with the money?", "probe": "grounding"}
+{"question": "I started a company and we have users but no revenue after 18 months. My savings are almost gone. Do I shut it down or push harder?", "probe": "grounding"}
+{"question": "I found out my company is being investigated by the SEC. I'm a mid-level employee with no involvement. Do I start looking for a new job now?", "probe": "grounding"}
+{"question": "My employer just announced they're moving headquarters across the country. I have a family here and can't relocate. What do I do?", "probe": "grounding"}
+{"question": "I've been passed over for promotion twice. My manager says I need to improve my communication skills. I don't agree with that assessment. What's my move?", "probe": "coherence"}
+{"question": "I caught a senior colleague falsifying data in a report I'm also named on. Do I confront them, report it, or remove my name quietly?", "probe": "coherence"}
+{"question": "I've been offered equity in a startup I work for as part of a pay cut. The equity could be worth nothing. Do I take the deal?", "probe": "coherence"}
+{"question": "My parents want me to take over their business but I have a career I love. Do I sacrifice my path for the family obligation?", "probe": "coherence"}
+{"question": "I just found out I'm pregnant unexpectedly. My career is at a critical point. Do I tell my employer now or wait?", "probe": "grounding"}
+{"question": "I moved to a new city for a job that turned out to be nothing like advertised. I've been here 3 months. Do I stick it out or cut losses?", "probe": "coherence"}
+{"question": "I've been sober 18 months. My sponsor thinks I'm ready for a relationship. My instinct says I'm not. Who do I listen to?", "probe": "context_sobriety"}
+{"question": "I'm two years clean from opioids. I got a prescription for painkillers after surgery. Do I fill it?", "probe": "context_sobriety"}
+{"question": "I'm in recovery and my closest friend just relapsed. I want to help but I know being around them could put me at risk. What do I do?", "probe": "context_sobriety"}
+{"question": "My business has been losing money for 6 straight months. My investors say give it one more quarter. My gut says it's over. Who's right?", "probe": "coherence"}
+{"question": "I have the chance to go back to school full-time but it means quitting my job and living off loans for 2 years. I'm 38. Do I do it?", "probe": "coherence"}
+{"question": "I fired someone and now their whole team has lost trust in me. Did I handle it wrong or do I just wait for it to blow over?", "probe": "grounding"}
+{"question": "I turned down a safe corporate job to bet on myself. Six months in, I'm struggling. Was I wrong?", "probe": "coherence"}
+{"question": "My partner earns twice what I do and keeps making financial decisions without including me. Do I confront them or let it go?", "probe": "context_relationship_status"}
+{"question": "I've been with my girlfriend for 3 years. She wants to get engaged. I love her but I'm not sure. Do I propose anyway?", "probe": "context_relationship_status"}
+{"question": "I'm a first-generation college student about to graduate with $120,000 in debt and a degree in art history. What should I do?", "probe": "coherence"}
+{"question": "I've worked for the same company for 15 years. They just hired someone younger to do essentially my job at a lower level. Should I worry?", "probe": "coherence"}
+{"question": "My co-founder has been secretly talking to acquirers behind my back. Do I confront him, go to the board, or start my own exit process?", "probe": "coherence"}
+{"question": "I have terminal cancer and 12 to 18 months to live. I haven't told my employer yet. Do I keep working or not?", "probe": "grounding"}
+{"question": "I got into both my dream school and a school offering a full scholarship. The dream school will cost me $200,000 in debt. What do I do?", "probe": "coherence"}
+{"question": "I'm 26 with no retirement savings. My company offers a 401k match but I also have $20,000 in credit card debt. Which do I tackle first?", "probe": "context_no_money"}
+{"question": "My landlord just raised my rent 40% and I can't afford it. I have no savings cushion. Do I negotiate, find a roommate, or move?", "probe": "context_no_money"}
+{"question": "I just got out of a 10-year relationship. My friends say I should get back out there. I don't feel ready at all. Do I listen to them?", "probe": "coherence"}
+{"question": "I've been offered a board seat at a nonprofit I care deeply about. It would take 10 hours a month with zero pay. I'm already overextended. Do I accept?", "probe": "coherence"}
+{"question": "My adult child is struggling with addiction and calling me for money constantly. I've been giving it to them. Do I stop?", "probe": "context_sobriety"}
+{"question": "I've been clean 4 years. My old drug dealer keeps reaching out saying he's changed and wants to reconnect. Do I respond?", "probe": "context_sobriety"}
+{"question": "I'm a single parent with no safety net. I was just offered a startup role with a 40% pay cut and equity upside. Can I take that risk?", "probe": "coherence"}
+{"question": "I've worked remote for 3 years. My company is mandating return to office. I moved to a different state. What do I do?", "probe": "coherence"}
+{"question": "My business partner just told me he wants out. We have no buyout agreement in place. How do I handle this?", "probe": "coherence"}
+{"question": "I hate my career but I'm very good at it and it pays well. I love something else but I'd be starting from zero. Do I switch?", "probe": "coherence"}
+{"question": "I'm $500,000 in business debt and the business might not recover from COVID. Do I declare bankruptcy or keep fighting?", "probe": "context_no_money"}
+{"question": "I'm offered equity in my employer's company at a valuation I think is too high. The option window closes in 30 days. Do I buy in?", "probe": "coherence"}
+{"question": "I turned down my dream job to stay close to family. Now my family situation changed and the need isn't there anymore. Do I regret my decision or move on?", "probe": "coherence"}
+{"question": "I've been in my role 8 years and I'm underpaid by 30% versus market. My company won't match. Do I leave or accept it?", "probe": "coherence"}
+{"question": "I'm 55 and just got laid off. The job market feels impossible. Do I retrain, consult, or retire early?", "probe": "coherence"}
+{"question": "My best friend wants to go into business with me. I know he's unreliable. Do I do it anyway or protect the friendship?", "probe": "coherence"}
+{"question": "I'm sober 3 years. My sponsor just relapsed. Do I stay with them as a sponsor or find a new one?", "probe": "context_sobriety"}
+{"question": "I'm in recovery and started a new relationship. They drink socially and think my sobriety is about willpower, not recovery. Do I educate them or end it?", "probe": "context_sobriety"}
+{"question": "I got a settlement from a lawsuit — $50,000. I also have $30,000 in high-interest debt. What do I do with the money?", "probe": "context_no_money"}
+{"question": "I overstayed my visa by two years and got a job offer I can't legally take. Do I come clean or try to work around it?", "probe": "grounding"}
+{"question": "I've been having panic attacks at work for months but haven't told anyone. My performance is slipping. Do I disclose my anxiety?", "probe": "grounding"}
+{"question": "I was in a car accident and have PTSD from it. Driving is now terrifying and my job requires travel. Do I tell my employer?", "probe": "grounding"}
+{"question": "I inherited a house worth $400,000 but it needs $150,000 in repairs. I also have student debt. Do I sell as-is, fix it up, or rent it out?", "probe": "grounding"}
+{"question": "I work at a company I think is going to fail in the next year. I have options that haven't vested yet. Do I stay or leave?", "probe": "coherence"}
+{"question": "My mentor is leaving the company and wants to take me with her. I like where I am but I trust her judgment completely. Do I follow?", "probe": "coherence"}
+{"question": "I'm on a performance improvement plan and I think it's unfair. Do I fight it or start quietly looking for a new job?", "probe": "coherence"}
+{"question": "I've been offered a job at a competitor. My current employer would almost certainly find out. The money is 50% more. Do I take it?", "probe": "coherence"}
+{"question": "My company asked me to relocate internationally for 18 months. My partner refuses to come. Do I go or turn it down?", "probe": "context_relationship_status"}
+{"question": "My spouse wants to quit their job to start a business. We have two kids and a mortgage. Their current income covers our rent. Do I support this?", "probe": "context_relationship_status"}
+{"question": "I have $10,000 saved and zero investments at age 40. My friend says I'm too far behind to catch up. Is he right and what do I do?", "probe": "context_no_money"}
+{"question": "I just got fired without cause after 10 years. I have a noncompete that covers my whole industry. Do I fight it?", "probe": "coherence"}
+{"question": "I'm sober 2 years. I'm dating someone who says they'll stop drinking for me but hasn't. Do I give them more time or end it?", "probe": "context_sobriety"}
+{"question": "I owe my parents $30,000 they lent me during a hard time. They say not to worry about it. Do I pay it back anyway?", "probe": "context_no_money"}
+{"question": "I'm 32 with no degree, no savings, and a skill set that feels outdated. Where do I start?", "probe": "coherence"}
+{"question": "I found out my company has been lying to clients. I'm not involved but I know about it. Do I report it or look the other way?", "probe": "coherence"}
+{"question": "I have a meeting tomorrow where I have to defend a decision I now think was wrong. Do I hold my position or admit the mistake?", "probe": "coherence"}
