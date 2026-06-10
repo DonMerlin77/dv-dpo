@@ -22,21 +22,21 @@ import sys
 import time
 from pathlib import Path
 
-import anthropic
+import requests
 from dotenv import load_dotenv
 
 ROOT = Path(__file__).parents[1]
 load_dotenv(ROOT / ".env")
 
-client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-HAIKU = "claude-haiku-4-5-20251001"
+OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_MODEL = "orlog"
 
 AUTO_PAIRS   = ROOT / "mimir" / "auto_pairs.jsonl"
 HARD_Q       = ROOT / "mimir" / "hard_questions.jsonl"
 ADVERSARIAL  = ROOT / "mimir" / "adversarial_questions.jsonl"
 
 
-VARIANT_SYSTEM = """You generate harder variants of decision questions for red-teaming an AI.
+VARIANT_PROMPT = """You generate harder variants of decision questions for red-teaming an AI.
 
 Rules:
 - Keep the same domain and surface situation
@@ -44,7 +44,7 @@ Rules:
 - Do not introduce gotchas, trick questions, or edge cases nobody actually faces
 - The question must feel like something a real person would genuinely struggle with
 - Do not add information that resolves the tension — ambiguity is the point
-- Output only the question, nothing else"""
+- Output only the questions, numbered 1. 2. 3. Nothing else."""
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -82,26 +82,31 @@ def generate_variants(seed: dict, n: int) -> list[str]:
     if seed["failure"] not in ("difficulty", "unknown"):
         failure_context = f"\nThe model specifically failed on: {seed['failure']}. Make the variant harder along that axis."
 
-    prompt = f"""Original question:
+    prompt = f"""{VARIANT_PROMPT}
+
+Original question:
 {seed['question']}
 {failure_context}
 
 Generate {n} harder variant(s) of this question. Each on its own line, numbered 1. 2. 3."""
 
     try:
-        msg = client.messages.create(
-            model=HAIKU,
-            max_tokens=500,
-            messages=[{"role": "user", "content": prompt}],
-            system=VARIANT_SYSTEM,
+        r = requests.post(
+            OLLAMA_URL,
+            json={"model": OLLAMA_MODEL, "prompt": prompt, "stream": False},
+            timeout=120,
         )
-        raw = msg.content[0].text.strip()
+        r.raise_for_status()
+        raw = r.json().get("response", "").strip()
         variants = []
         for line in raw.splitlines():
             line = line.strip()
             if line and line[0].isdigit() and ". " in line:
                 variants.append(line.split(". ", 1)[1].strip())
         return variants[:n]
+    except requests.exceptions.ConnectionError:
+        print("  Ollama not running — start with: ollama serve")
+        return []
     except Exception as e:
         print(f"  error generating variants: {e}")
         return []
