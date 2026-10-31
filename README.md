@@ -1,5 +1,26 @@
 # DV-DPO: Deliberation-Validated DPO
 
+> **Status (October 2026): the idea below did not survive its own tests. This repo is the first version, kept public
+> as a record of what was tried and what went wrong.**
+>
+> - The results table below measures **format compliance** (does the model answer in the expected shape), not whether
+>   its decisions got better. Later work replaced it with real-decision tests.
+> - The pipeline evolved into matched counterfactual pairs. On a narrow hold/revise ruler, training looked like a big
+>   win (+18.9 points on a 3B model, full-parameter).
+> - **Then a blind 5-judge panel compared answers to 80 real decisions: the untrained model beat the trained one about
+>   94% of the time** (trained wins 5, untrained 74, ties 3; a positive control confirmed the judging; answer length was
+>   not the cause). The ruler had rewarded something other than good decisions: Goodhart's law, caught before shipping.
+> - A broadened 5-axis decision-quality ruler fixed the ordering (it agrees with the blind panel), which is the lesson:
+>   one narrow metric can point backwards; check it against an independent judgment of real use.
+> - "No human labelers required" did not hold: the human-label gate was never cleared.
+>
+> Companion tools that came out of this work: [shortcut-gate](https://github.com/DonMerlin77/shortcut-gate) (catches
+> label-leaking shortcuts in preference data) and [reasoning-assay](https://github.com/DonMerlin77/reasoning-assay).
+
+---
+
+## Original README (June 2026)
+
 A training pipeline that generates its own DPO pairs from AI deliberation — no human labelers required.
 
 ## The idea
